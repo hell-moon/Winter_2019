@@ -30,7 +30,7 @@ void fooB(int* jptr){
      /*Print the value and address of the integer pointed to by jptr*/
 	printf("Value pointed to by jptr: %d\n", *jptr);
 	printf("Address of integer pointed to by jptr: %p\n", jptr);
-               
+
      /*Decrement the address by 1 pointed to by jptr using jptr */
 	jptr--;
 
@@ -73,8 +73,8 @@ int main(){
     printf("The address of x: %p\n",&x);
     /*
      * COMMENT ANSWER:
-     * The value and address of x is the same as before fooB() was called because changing the address of
-     *
+     * The value and address of x is the same as before fooB() was called because changing the address that jptr
+     * points to doesn't affect the value of x
      */
     
     return 0;
