@@ -23,14 +23,13 @@ void swap(int** a, int** b){
 
 int foo(int* a, int* b, int c){
     /*Swap the addresses stored in the pointer variables a and b*/
-	//swap(&a, &b);
-	int *temp = a;
-	a = b;
-	b = temp;
+	int *temp = *a; /* temp points to value pointed to by a, which is the address of x*/
+	*a = *b;		/* value that a points to is adress that b points to, which is address of y*/
+	*b = temp;		/* value that b points to is value of temp, which is value pointed to by a, which is address of x*/
 
     /*Decrement the value of integer variable c*/
 	c--;
-    
+
     /*Return c*/
 	return c;
 }
@@ -69,11 +68,9 @@ int main(){
      *
      * b) Are the values of integers x and y different before and after calling the function
      * 	  foo(..)?
-     * 	  	No, the values of x and y are the same before and after the call to foo(..).
-     * 	  	I believe that when x and y are passed as parameters and their addresses are swapped
-     * 	  	inside of foo, the values of a and b, which point to x and y, respectively, are actually
-     * 	  	swapped and the addresses of x and y stay the same, and when values of x and y are printed
-     * 	  	after foo(..) is called, they are identical to before the function was called.
+     * 	  	Yes, the values of x and y are different, the swap function swapps the
+     * 	  	two addresses each pointer points to, essentially having the label 'x' represent the
+     * 	  	value and address of what belonged to 'y' and vice versa.
      */
 
 
