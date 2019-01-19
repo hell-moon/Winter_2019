@@ -1,0 +1,14 @@
+.outer-content {
+	height: 50px;
+	text-align: center;
+		width: 75%;
+	background: pink;
+}
+
+.inner-content {
+
+	width: 75%;
+	background: teal;
+	margin: 0 auto;
+    align-items: center;
+}
