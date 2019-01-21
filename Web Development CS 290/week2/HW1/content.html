@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Name: Xiao Kuang
+		 Date: 1/20/2019
+		 Class: CS290-401
+	 -->
 	<title>HW1: HTML/CSS</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 	<table border="1">
+		<caption>Great JDM cars.  Cell content indicates model for each make in respective categories.</caption>
 		<thead>
 			<tr>
 				<th><em></em></th>
@@ -17,7 +22,7 @@
 				<th>Honda</th>
 			</tr>
 			<tr>
-				<th><em>AWD</em></th>
+				<td><em>AWD</em></td>
 				<td>Skyline GT-R</td>
 				<td>Prius AWD-e</td>
 				<td>WRX/STI</td>
@@ -25,7 +30,7 @@
 				<td>N/A</td>
 			</tr>
 			<tr>				
-				<th><em>FWD</em></th>
+				<td><em>FWD</em></td>
 				<td>Maxima 3.5 SV</td>
 				<td>Celica GT-Four</td>
 				<td>N/A</td>
@@ -34,7 +39,7 @@
 
 			</tr>
 			<tr>				
-				<th><em>RWD</em></th>
+				<td><em>RWD</em></td>
 				<td>370z Nismo</td>
 				<td>GT-86</td>
 				<td>BRZ</td>
@@ -42,7 +47,7 @@
 				<td>S2000</td>
 			</tr>
 			<tr>				
-				<th><em>Power</em></th>
+				<td><em>Power</em></td>
 				<td>GTR Nismo</td>
 				<td>Supra Twin-Turbo</td>
 				<td>Impreza WRX/STI</td>
@@ -50,7 +55,7 @@
 				<td>Civic Type-R</td>
 			</tr>
 			<tr>				
-				<th><em>Price</em></th>
+				<td><em>Price</em></td>
 				<td>GT-R Nismo GT1</td>
 				<td>GT-One Road Version</td>
 				<td>WRX STi Type RA NBR</td>
@@ -60,14 +65,15 @@
 		</thead>
 		<tfoot>
 			<tr>
-				<td colspan="2">Footer 1</td>
-				<td colspan="4">Footer 2</td>
+				<td class="footer" colspan="2">Footer 1</td>
+				<td class="footer" colspan="4">Footer 2</td>
 			</tr>
 		</tfoot>
 	</table>
 
 
 	<ul>
+		<caption>Cities in Runescape</caption>
 		<li>Starting City<ul>
 			Lumbridge
 		</ul>
@@ -83,9 +89,106 @@
 	</ul>
 
 	<div class="outer-content">
-		<div class="inner-content">Here is some content
+		<div class="inner-content">
+			Help, I'm surrounded!!
 		</div>
 	</div>
 
+	<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+		<fieldset>
+			<legend>Some GET Data</legend>
+			<div class="input">
+				<label for="text">Text here:
+				</label>
+				<input id="text" type="text" name="text_input" required="" placeholder="Type text here">
+			</div>
+			
+			<div class="input">
+				<label for="number">Number here:
+				</label>
+				<input id="number" type="number" name="numerical_input"  required="" placeholder="Type number(s) here">
+			</div>
+			
+			<div class="input">
+				<label for="password">Password here:
+				</label>
+				<input id="password" type="password" name="password_input" required="" placeholder="Type password here">
+			</div>
+			
+			<div class="input">
+				Select between:
+				<br>
+				
+					<input id="snickers" type="radio" name="candy1" required="" value="Snickers">
+					<label for="snickers">
+					Snickers</label>
+				<br>
+				
+				
+					<input id="skittles" type="radio" name="candy1" required="" value="Skittles">
+					<label for="skittles">Skittles</label>
+				<br>
+				
+				
+					<input id="mentos" type="radio" name="candy1" required="" value="Mentos">
+					<label for="mentos">Mentos</label>
+				<br>
+				<div >
+					<button type="submit">Submit</button>
+				</div>
+				
+			</div>
+			
+		</fieldset>
+	</form>
+		
+
+		<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+		<fieldset>
+			<legend>Some POST Data</legend>
+			<div class="input">
+				<label for="text">Text here:
+				</label>
+				<input id="text" type="text" name="text_input" required="" placeholder="Type text here">
+			</div>
+			
+			<div class="input">
+				<label for="number">Number here:
+				</label>
+				<input id="number" type="number" name="numerical_input"  required="" placeholder="Type number(s) here">
+			</div>
+			
+			<div class="input">
+				<label for="password">Password here:
+				</label>
+				<input id="password" type="password" name="password_input" required="" placeholder="Type password here">
+			</div>
+			
+			<div class="input">
+				Select between:
+				<br>
+				
+					<input id="snickers" type="radio" name="candy2" required="" value="Snickers">
+					<label for="snickers">
+					Snickers</label>
+				<br>
+				
+				
+					<input id="skittles" type="radio" name="candy2" required="" value="Skittles">
+					<label for="skittles">Skittles</label>
+				<br>
+				
+				
+					<input id="mentos" type="radio" name="candy2" required="" value="Mentos">
+					<label for="mentos">Mentos</label>
+				<br>
+				<div >
+					<button type="submit">Submit</button>
+				</div>
+				
+			</div>
+			
+		</fieldset>
+	</form>
 </body>
 </html>
